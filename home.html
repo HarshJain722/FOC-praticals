@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Score Performance System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf0ff;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 85%;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .result {
+            background: #e0ffe0;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Match Score System</h1>
+        <p>AI Match Performance Prediction</p>
+
+        <form>
+            <input type="text" placeholder="Team 1 Name" required>
+            <input type="number" placeholder="Team 1 Score" min="0" required>
+
+            <input type="text" placeholder="Team 2 Name" required>
+            <input type="number" placeholder="Team 2 Score" min="0" required>
+
+            <input type="submit" value="Predict Performance">
+        </form>
+
+        <div class="result">
+            <h3>Performance Result</h3>
+            <p>Enter match details to analyze performance.</p>
+            <p>Prediction: Win / Lose / Draw</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
